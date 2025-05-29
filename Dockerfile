@@ -1,5 +1,5 @@
 # Usa una imagen oficial con Java 17 y Maven
-FROM maven:3.8.6-openjdk-17 AS build
+FROM maven:3.9.6-openjdk-17 AS build
 
 WORKDIR /app
 COPY . /app
