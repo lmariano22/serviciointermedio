@@ -1,7 +1,7 @@
 services:
   - type: web
     name: servicio-intermedio-final
-    env: java
-    buildCommand: "./mvnw clean package"
-    startCommand: "java -jar target/serviciointermedio-0.0.1-SNAPSHOT.jar"
+    env: docker
     plan: free
+    repo: https://github.com/lmariano22/serviciointermedio
+    branch: main
