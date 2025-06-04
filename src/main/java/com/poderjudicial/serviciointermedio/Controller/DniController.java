@@ -13,7 +13,7 @@ public class DniController {
 	
 	@GetMapping("/consulta-dni/{dni}")
     public ResponseEntity<Map<String, Object>> consultarDni(@PathVariable String dni) {
-        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imx1aXNhbmdlbG1hcmlhbm9qYXZpZXJAZ21haWwuY29tIn0.FJ_BsNvRo0prJdu_SPncFZUamn539ciFIc6dOyoAVCM";
+        String token = "https://dniruc.apisperu.com/api/v1/dni/12345678?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImluZm9ybWF0aWNhX3ZlbnRhbmlsbGFAcGouZ29iLnBlIn0.TcXifDWUiXG5WvWgHtgLZm7dB4ACMBxvkyOGx2TjY9w";
         String url = "https://dniruc.apisperu.com/api/v1/dni/" + dni + "?token=" + token;
 
         Map<String, Object> response = new HashMap<>();
